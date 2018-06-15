@@ -1,0 +1,1668 @@
+296 INFO: PyInstaller: 3.3.1
+296 INFO: Python: 3.6.3
+296 INFO: Platform: Windows-7-6.1.7601-SP1
+296 INFO: wrote C:\Users\steph\Documents\Python Scripts\v180608-v2\cprofiles_lmfit.spec
+296 INFO: UPX is not available.
+296 INFO: Extending PYTHONPATH with paths
+['C:\\Users\\steph\\Documents\\Python Scripts\\v180608-v2',
+ 'C:\\Users\\steph\\Documents\\Python Scripts\\v180608-v2']
+296 INFO: checking Analysis
+296 INFO: Building Analysis because out00-Analysis.toc is non existent
+296 INFO: Initializing module dependency graph...
+296 INFO: Initializing module graph hooks...
+296 INFO: Analyzing base_library.zip ...
+3828 INFO: running Analysis out00-Analysis.toc
+3828 INFO: Adding Microsoft.Windows.Common-Controls to dependent assemblies of final executable
+  required by C:\Users\steph\Anaconda3\python.exe
+4437 INFO: Caching module hooks...
+4437 INFO: Analyzing C:\Users\steph\Documents\Python Scripts\v180608-v2\cprofiles_lmfit.py
+6062 INFO: Processing pre-find module path hook   distutils
+10218 INFO: Processing pre-find module path hook   site
+10218 INFO: site: retargeting to fake-dir 'C:\\Users\\steph\\Anaconda3\\lib\\site-packages\\PyInstaller\\fake-modules'
+13421 INFO: Processing pre-find module path hook   PyQt5.uic.port_v3
+13500 INFO: Processing pre-find module path hook   PyQt5.uic.port_v2
+16156 INFO: Processing pre-safe import module hook   six.moves
+23968 INFO: Processing pre-safe import module hook   urllib3.packages.six.moves
+Traceback (most recent call last):
+  File "C:\Users\steph\Anaconda3\Scripts\pyinstaller-script.py", line 5, in <module>
+    sys.exit(PyInstaller.__main__.run())
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\__main__.py", line 94, in run
+    run_build(pyi_config, spec_file, **vars(args))
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\__main__.py", line 46, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\building\build_main.py", line 791, in main
+    build(specfile, kw.get('distpath'), kw.get('workpath'), kw.get('clean_build'))
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\building\build_main.py", line 737, in build
+    exec(text, spec_namespace)
+  File "<string>", line 16, in <module>
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\building\build_main.py", line 213, in __init__
+    self.__postinit__()
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\building\datastruct.py", line 161, in __postinit__
+    self.assemble()
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\building\build_main.py", line 415, in assemble
+    priority_scripts.append(self.graph.run_script(script))
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 201, in run_script
+    self._top_script_node = super(PyiModuleGraph, self).run_script(pathname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1351, in run_script
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1424, in import_hook
+    source_package, target_module_partname, level)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1576, in _find_head_package
+    target_module_headname, target_package_name, source_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2420, in _safe_import_hook
+    edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1441, in import_hook
+    target_module, target_attr_names):
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1729, in _import_importable_package_submodules
+    attr_name, submodule_name, package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2031, in _load_module
+    m = self._load_package(fqname, pathname, packagepath)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2816, in _load_package
+    self._load_module(fqname, fp, buf, stuff)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2547, in _scan_code
+    self._process_imports(module)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2746, in _process_imports
+    target_module = self._safe_import_hook(*import_info, **kwargs)[0]
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2224, in _safe_import_hook
+    target_attr_names=None, level=level, edge_attr=edge_attr)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1425, in import_hook
+    target_module = self._load_tail(target_package, target_module_partname)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1638, in _load_tail
+    submodule = self._safe_import_module(head, mname, submodule)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\depend\analysis.py", line 271, in _safe_import_module
+    module_basename, module_name, parent_package)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 1993, in _safe_import_module
+    module_name, file_handle, pathname, metadata)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2085, in _load_module
+    self._scan_code(m, co, co_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2535, in _scan_code
+    self._scan_ast(module, module_code_object_ast)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 2564, in _scan_ast
+    visitor.visit(module_code_object_ast)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 965, in visit_FunctionDef
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 261, in generic_visit
+    self.visit(item)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+  File "C:\Users\steph\Anaconda3\lib\site-packages\PyInstaller\lib\modulegraph\modulegraph.py", line 960, in visit_If
+    self.generic_visit(node)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 263, in generic_visit
+    self.visit(value)
+  File "C:\Users\steph\Anaconda3\lib\ast.py", line 253, in visit
+    return visitor(node)
+RecursionError: maximum recursion depth exceeded
